@@ -20,8 +20,13 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatchling
     - pip
+    - hatchling ==1.29.0
+    - packaging ==26.0
+    - pathspec ==1.0.4
+    - pluggy ==1.6.0
+    - tomli ==2.4.0
+    - trove-classifiers ==2026.1.14.14
   run:
     - python >=${{ python_min }},<3.14
     - apache-airflow-core <3.2.0,>=3.1.7
