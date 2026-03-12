@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: apache-airflow-task-sdk
-  version: 1.1.7
+  version: "1.1.8"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_task_sdk-${{ version }}.tar.gz
-  sha256: 658815d5d93c8b3e04432c50d31bcec382f4637466ea558bc13e97907c725bc5
+  sha256: d9b6027906a0e179c7ddc550c13717663785460a539b933741f22c47d10f4930
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
